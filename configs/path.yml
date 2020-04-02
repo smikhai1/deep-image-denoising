@@ -1,0 +1,9 @@
+data:
+  path: /home/Mikhail.Sidorenko/digital-rock/data/158
+
+results:
+  path: /home/Mikhail.Sidorenko/digital-rock/data/158/results
+
+dumps:
+  weights: ./trained-models/red-net/ct/mse-loss/
+  logs: ./logs

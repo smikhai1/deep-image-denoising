@@ -1,0 +1,23 @@
+data_params:
+  batch_size: 32
+  num_workers: 4
+  augmentation_params:
+    crop_size: 128
+  #sigma: 10
+
+train_params:
+  model_name: REDNet
+  model: models.denoising.rednet.RED_Net_20
+  optimizer: Adam
+  optimizer_params:
+    lr: 0.001
+  scheduler: ReduceLROnPlateau
+  scheduler_params:
+    mode: "max"
+    factor: 0.1
+    patience: 5
+    verbose: True
+    min_lr: 0.0000001
+  max_epoch: 200
+  loss: torch.nn.MSELoss
+  metrics: [PSNR, MSE, SSIM]

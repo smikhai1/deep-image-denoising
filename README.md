@@ -1,2 +1,2 @@
-# deep-image-denoising
-deep-image-denoising
+# DeepDigitalRock
+This is the companion code 

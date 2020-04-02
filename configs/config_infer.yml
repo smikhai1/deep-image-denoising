@@ -1,0 +1,8 @@
+data_params:
+  batch_size: 1
+  num_workers: 4
+
+inference_params:
+  model_name: REDNet20
+  model: models.denoising.rednet.RED_Net_20
+  device: cuda
